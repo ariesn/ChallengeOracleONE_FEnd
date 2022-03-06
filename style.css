@@ -1,0 +1,95 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+    background-color: #F5F5F5;
+    width: 1440px;
+}
+
+header {
+    padding: 32px, 0px, 32px, 0px
+}
+
+.menu-principal {
+    position: relative;
+    width: 1136px;
+    padding: 32px 0px;
+    margin: 0 auto;
+    line-height: normal;   
+}
+
+.menu-principal h1 {
+    font-weight: 700;
+    font-size: 16px;
+    display: inline-block;
+    line-height: normal;
+}
+
+.imagen-logo {
+    /* box-shadow: 5px 5px 10px 2px rgb(211, 205, 170); */
+    float:left;
+    margin: 0 1em 0 0;
+}
+
+nav {
+    position: absolute;
+    display: inline-block;  
+    right: 1em;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 2em;
+}
+
+nav a {
+    color: #464646;;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #408DFF;
+}
+
+.acerca-mi {
+    width: 1136px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.contenido-acerca-mi {
+    width: 67%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 3em 0; 
+}
+
+.acerca-mi p {
+    margin: 24px 0;
+    font-size: 22px;
+}
+
+.contenido-acerca-mi > p:first-child {
+    font-size: 3.4em;
+    font-weight: bold;
+    line-height: 61px;   
+}
+
+.acerca-mi nav {
+    
+    position: relative;
+    right: 1em;
+}
+
+.foto-perfil {   
+    width: 32.3%;
+}
+
+.items {
+    line-height: 1.5;
+}
+
+.items::after {
+    content: " 🡥";
+}
