@@ -6,47 +6,84 @@
         <title>Portafolio NSN</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="flexbox.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
 
     </head>
 
     <body>
 
-        <header>
+        <header class="headerPrincipal">
             <div class="menu-principal">
                 <h1><img src="imagenes/logo.png" class="imagen-logo" alt="Imágen Logo">Nadia Sámano</h1>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Sobre mi</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                        <li><a href="hobbies.html">Hobbies</a></li>
-                        <li><a href="formacion.html">Formación</a></li>
-                        <li><a href="proyectos.html">Proyectos</a></li>
-                        <li><a href="contacto.html">contacto@fulana.com</a></li>
-                    </ul>
+                <nav class="headerPrincipal-nav">
+                        <a class="headerPrincipal-nav-link" href="#id-presentacion">Sobre mi</a>
+                        <a class="headerPrincipal-nav-link" href="#id-skills-hobbies">Skills</a>
+                        <a class="headerPrincipal-nav-link" href="#id-skills-hobbies">Hobbies</a>
+                        <a class="headerPrincipal-nav-link" href="#id-formaciones-cursos">Formación</a>
+                        <a class="headerPrincipal-nav-link" href="#id-experiencia-prog">Proyectos</a>
+                        <a class="headerPrincipal-nav-link" href="contacto.html">contacto@fulana.com</a>
                 </nav>
             </div>
         </header>
 
-        <main>
-            <section class="acerca-mi">
-                <div class="contenido-acerca-mi">
-                    <p>Hola, mi nombre es Nadia y construyo páginas web</p>
+        <main class="contenidoPrincipal">
+            <section id="id-presentacion" class="presentacion">
+                <div class="contenido-presentacion">
+                    <p>Hola, mi nombre es Fulana de Tal y construyo páginas web</p>
                     <p>Soy egresada de Lic. en Informática y actualmente estoy participando en el proyecto Oracle ONE en Alura Latam.</p>
                     <nav>
-                        <ul>
-                            <li class="items">Github</li>
-                            <li class="items">Linkedln</li>
-                            <li class="items">Instagram</li>
-                            <li class="items">Curriculo</li>
+                        <ul class="presentacion-list">
+                            <li class="presentacion-items">Github</li>
+                            <li class="presentacion-items">Linkedln</li>
+                            <li class="presentacion-items">Instagram</li>
+                            <li class="presentacion-items">Curriculo</li>
                         </ul>
                     </nav>
                 </div><img class="foto-perfil" src="imagenes/foto_perfil.png" alt="Foto de perfil">
             </section>
-
-            <section class="pasatiempos-habilidades"></section>
-            <section class="formaciones-cursos"></section>
-            <section class="experiencia-prog"></section>
+            <section class="sobre-mi">
+                <div class="container">
+                    <h2 class="subtitulo">Sobre mi</h2>
+                    <div class="texto-item">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+                    </div>
+                    <img class="firma" src="imagenes/image4.png" alt="Imágen de firma">
+                </div>
+            </section>
+            <section id="id-skills-hobbies" class="skills-hobbies">
+                <div class="container">
+                    <h2 class="subtitulo">Skills</h2>
+                    <nav>
+                        <ul class="contenidoPrincipal-skills">
+                            <li class="contenidoPrincipal-skills-link"><a href="#">Html 5</a></li>
+                            <li class="contenidoPrincipal-skills-link"><a href="#">Javascript</a></li>
+                            <li class="contenidoPrincipal-skills-link"><a href="#">PHP</a></li>
+                            <li class="contenidoPrincipal-skills-link"><a href="#">.NET</a></li>
+                            <li class="contenidoPrincipal-skills-link"><a href="#">SQLServer</a></li>
+                            <li class="contenidoPrincipal-skills-link"><a href="#">CSS</a></li>
+                        </ul>
+                    </nav>
+                    <h2 class="subtitulo">Hobbies</h2>
+                    <nav>
+                        <ul class="contenidoPrincipal-skills">
+                            <li class="contenidoPrincipal-skills-link"><a href="#">Oir música</a></li>
+                            <li class="contenidoPrincipal-skills-link"><a href="#">Jardinería</a></li>
+                            <li class="contenidoPrincipal-skills-link"><a href="#">Ver series/cine</a></li>
+                            <li class="contenidoPrincipal-skills-link"><a href="#">Pausas activas</a></li>
+                            <li class="contenidoPrincipal-skills-link"><a href="#">Lectura</a></li>
+                            <li class="contenidoPrincipal-skills-link"><a href="#">Viajar</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <section id="id-formaciones-cursos" class="formaciones-cursos">
+                <p>formaciones-cursos</p>
+            </section>
+            <section id="id-experiencia-prog" class="experiencia-prog">
+                <p>experiencia-prog</p>
+            </section>
             <!-- formulario de contacto -->
         </main>
                 

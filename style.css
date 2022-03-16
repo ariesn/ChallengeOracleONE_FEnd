@@ -2,43 +2,29 @@ body {
     font-family: 'Raleway', sans-serif;
     color: #464646;
     background-color: #F5F5F5;
-    width: 1440px;
 }
 
-header {
+/* header {
     padding: 32px, 0px, 32px, 0px
 }
+*/
 
 .menu-principal {
-    position: relative;
-    width: 1136px;
-    padding: 32px 0px;
+    width: 80%;
+    padding: 1em 0px;
     margin: 0 auto;
     line-height: normal;   
 }
 
-.menu-principal h1 {
-    font-weight: 700;
-    font-size: 16px;
-    display: inline-block;
-    line-height: normal;
-}
-
 .imagen-logo {
-    /* box-shadow: 5px 5px 10px 2px rgb(211, 205, 170); */
-    float:left;
-    margin: 0 1em 0 0;
-}
+    margin-right: 1em;
+ }
 
-nav {
-    position: absolute;
-    display: inline-block;  
-    right: 1em;
-}
-
-nav li {
-    display: inline;
-    margin: 0 0 0 2em;
+.headerPrincipal-nav-link {
+	padding: 10px;
+	text-decoration: none;
+	transition: .5s;
+	display: block;
 }
 
 nav a {
@@ -52,44 +38,89 @@ nav a:hover {
     color: #408DFF;
 }
 
-.acerca-mi {
-    width: 1136px;
+.presentacion { 
+    width: 80%;
     margin: 0 auto;
-    vertical-align: middle;
 }
 
-.contenido-acerca-mi {
-    width: 67%;
-    display: inline-block;
-    vertical-align: top;
-    margin: 3em 0; 
-}
+.presentacion p {
 
-.acerca-mi p {
-    margin: 24px 0;
     font-size: 22px;
 }
 
-.contenido-acerca-mi > p:first-child {
+.contenido-presentacion > p:first-child {
     font-size: 3.4em;
     font-weight: bold;
     line-height: 61px;   
 }
 
-.acerca-mi nav {
-    
-    position: relative;
-    right: 1em;
-}
-
 .foto-perfil {   
     width: 32.3%;
+
 }
 
-.items {
-    line-height: 1.5;
+.subtitulo {
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+	line-height: 38px;
+
 }
 
-.items::after {
-    content: " 🡥";
+.sobre-mi {
+    background-color: #EAF2FD;
 }
+
+.firma {
+    width: 12%;
+    margin-top: 2%;
+}
+
+.skills-hobbies .container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.skills-hobbies .container .subtitulo {
+    text-align: center;
+    margin: 1em 0em;
+}
+
+.contenidoPrincipal-skills-link {
+	height: 174px;
+	background-color: #FFF;
+	text-align: left;
+	transition: .3s;
+	box-shadow: 2px 2px 2px #CCC;
+	position: relative;
+}
+
+.contenidoPrincipal-skills-link a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+    font-size: smaller;
+}
+
+.contenidoPrincipal-skills-link:hover {
+	box-shadow: 4px 4px 4px #CCC;
+}
+
+.contenidoPrincipal-skills-link a:before {
+	content: '';
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 115px 5px 7px 2px;
+    background: url(imagenes/background1.svg) no-repeat;
+}
+
+
+
+

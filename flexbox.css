@@ -1,0 +1,72 @@
+.headerPrincipal .menu-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-principal h1 {
+    display: flex;
+    font-size: 16px;
+    line-height: normal; 
+}
+
+.headerPrincipal-nav {
+    display: flex;
+}
+
+.contenidoPrincipal .presentacion {
+    display: flex;
+    align-items: center;
+}
+
+.presentacion .contenido-presentacion {
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    
+    flex-flow: wrap;
+    align-content: space-around;
+}
+
+.presentacion-list {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.presentacion-items {
+    line-height: 1.5;
+}
+
+.presentacion-items::after {
+    content: " 🡥";
+}
+
+.sobre-mi .container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 10px auto;
+    padding: 5%;
+}
+
+.texto-item {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 133px;
+    justify-content: space-between;
+    
+}
+
+.contenidoPrincipal-skills {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.contenidoPrincipal-skills-link {
+    display: flex;
+    width: 16%;
+}
