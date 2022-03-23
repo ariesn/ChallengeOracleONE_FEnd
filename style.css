@@ -11,13 +11,15 @@ body {
 
 .menu-principal {
     width: 80%;
-    padding: 1em 0px;
+    padding: 32px 0px;
     margin: 0 auto;
-    line-height: normal;   
+    line-height: normal;  
 }
 
 .imagen-logo {
     margin-right: 1em;
+    width: 24px;
+    height: 24px;
  }
 
 .headerPrincipal-nav-link {
@@ -40,12 +42,14 @@ nav a:hover {
 
 .presentacion { 
     width: 80%;
-    margin: 0 auto;
+    margin: 32px auto;
 }
 
 .presentacion p {
 
     font-size: 22px;
+    /*padding: 10px 0px; ....*/
+    margin: 0px 0px 24px 0px;
 }
 
 .contenido-presentacion > p:first-child {
@@ -62,18 +66,19 @@ nav a:hover {
 .subtitulo {
 	font-weight: bold;
 	font-size: 32px;
-	margin-bottom: 10px;
+	/* margin-bottom: 10px; */
 	line-height: 38px;
 
 }
 
 .sobre-mi {
     background-color: #EAF2FD;
+    padding: 64px 0px;
 }
 
 .firma {
     width: 12%;
-    margin-top: 2%;
+    /* margin-top: 2%; */
 }
 
 .skills-hobbies .container {
@@ -93,6 +98,7 @@ nav a:hover {
 	transition: .3s;
 	box-shadow: 2px 2px 2px #CCC;
 	position: relative;
+    width: 16%;
 }
 
 .contenidoPrincipal-skills-link a {

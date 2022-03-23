@@ -8,6 +8,7 @@
     display: flex;
     font-size: 16px;
     line-height: normal; 
+    align-items: center;
 }
 
 .headerPrincipal-nav {
@@ -22,20 +23,17 @@
 .presentacion .contenido-presentacion {
     display: flex;
     flex-direction: column;
-    height: 370px;
-    
-    flex-flow: wrap;
     align-content: space-around;
 }
 
 .presentacion-list {
     display: flex;
-    width: 500px;
     justify-content: space-between;
 }
 
 .presentacion-items {
     line-height: 1.5;
+    margin-right: 32px;
 }
 
 .presentacion-items::after {
@@ -47,26 +45,171 @@
     flex-direction: column;
     width: 80%;
     margin: 10px auto;
-    padding: 5%;
 }
 
 .texto-item {
     display: flex;
     flex-direction: column;
     width: 70%;
-    height: 133px;
     justify-content: space-between;
-    
+    margin-top: 16px;
+}
+
+.texto-item p {
+    margin-bottom: 16px;
 }
 
 .contenidoPrincipal-skills {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-.contenidoPrincipal-skills-link {
-    display: flex;
-    width: 16%;
+@media(max-width: 768px) {
+
+    .headerPrincipal .menu-principal {
+        width: initial; 
+        padding: 16px 32px;
+    }
+
+    .headerPrincipal-nav-link {
+		display: none;
+	}
+
+    .headerPrincipal-nav-link-contacto {
+		display: block;
+	}
+
+    .presentacion {
+        width: initial;
+        padding: 32px;
+        margin: 0px;
+    }
+
+    .presentacion-items {
+        margin-right: 5%;
+    }
+
+    .presentacion p {
+        font-size: 16px;
+        line-height: 18.78px;
+    }
+
+    .contenido-presentacion > p:first-child {
+        font-size: 22px;
+        line-height: 26px; 
+    }
+
+    .foto-perfil {   
+        width: 23%;
+    }
+
+    .sobre-mi {
+        padding: 32px;
+    }
+
+    .sobre-mi .container {
+        width: initial;
+        margin: 0px;
+    }
+
+    .subtitulo {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .texto-item {
+        width: initial;
+        height: initial;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .skills-hobbies .container {
+        width: initial;
+        margin: 0px 32px;
+    }
+
+    .contenidoPrincipal-skills {
+        align-items: center;
+        flex-wrap: wrap;
+        align-self: stretch;
+    }
+
+    .contenidoPrincipal-skills-link {
+        width: 30%;
+        height: 118px;
+        margin: 20px 2px 2px 0px;
+    }
+
+    .contenidoPrincipal-skills-link a:before { 
+        margin: 65px 5px 7px 2px; 
+    }
+
+}
+
+@media(max-width: 360px) {
+
+    .headerPrincipal .menu-principal {
+        padding: 16px;
+    }
+
+    .headerPrincipal-nav-link-contacto {
+        font-size: 14px;
+        padding: 0px 0px 0px 5px;
+	}
+
+    .contenidoPrincipal .presentacion {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    .presentacion .contenido-presentacion {
+        order: 1;
+        align-self: stretch;
+        margin: 16px 0px;
+    }
+    
+    .foto-perfil {   
+        width: 98px;
+        height: 98px;
+    }
+
+    .presentacion p {
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0px 0px 16px 0px;
+    }
+    
+    .presentacion-list {
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .presentacion-items {
+        margin-right: 6px;
+    }
+
+    .sobre-mi {
+        padding: 16px;
+    }
+
+    .sobre-mi .container {
+        width: initial;
+    }
+
+
+    .firma {
+        width: 40%;
+    }
+
+    .skills-hobbies .container {
+        margin: 0px 16px;
+    }
+
+    .contenidoPrincipal-skills-link {
+        width: 47%;
+    }
+    
 }
