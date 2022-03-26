@@ -63,7 +63,20 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: stretch;
 }
+
+.contenidoPrincipal-formacion {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 50px; */
+    align-items: center;
+    flex-wrap: wrap;
+    align-self: stretch;
+}
+
 
 @media(max-width: 768px) {
 
@@ -130,12 +143,6 @@
         margin: 0px 32px;
     }
 
-    .contenidoPrincipal-skills {
-        align-items: center;
-        flex-wrap: wrap;
-        align-self: stretch;
-    }
-
     .contenidoPrincipal-skills-link {
         width: 30%;
         height: 118px;
@@ -144,6 +151,45 @@
 
     .contenidoPrincipal-skills-link a:before { 
         margin: 65px 5px 7px 2px; 
+    }
+
+    
+    .formacion .container {
+        width: initial;
+        margin: 0px 32px;
+    }
+
+    .contenidoPrincipal-formacion-link {
+        height: 118px;
+        font-size: 14px;
+        line-height: 16.44px;
+    }
+
+    .contenidoPrincipal-formacion-link:first-child {
+        background: url(imagenes/image-uno-m.png) no-repeat;
+        background-color: #FFF;
+	    background-position: center;
+    }
+
+    .contenidoPrincipal-formacion-link:nth-child(2) {
+        background: url(imagenes/image-dos-m.png) no-repeat;
+        background-color: #FFF;
+        background-position: center;
+    }
+    
+    .contenidoPrincipal-formacion-link:nth-child(3) {
+        background: url(imagenes/image-tres-m.png) no-repeat;
+        background-color: #FFF;
+        background-position: center
+    }
+
+    .contenidoPrincipal-formacion-link a {
+        font-size: 16px;
+        line-height: 18.78px;
+    }
+
+    .contenidoPrincipal-formacion-link a:before {
+        margin: 128px 5px 7px 2px;
     }
 
 }
@@ -211,5 +257,16 @@
     .contenidoPrincipal-skills-link {
         width: 47%;
     }
+
+    .formacion .container {
+        margin: 0px 16px;
+        padding: 0px;
+    }
+
+    .contenidoPrincipal-formacion-link {
+        width: 296px;
+        margin: 0px 2px 60px 0px;
+    }
+       
     
 }
