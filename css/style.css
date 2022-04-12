@@ -1,3 +1,5 @@
+@import url(_variables.css);
+
 body {
     font-family: 'Raleway', sans-serif;
     color: #464646;
@@ -122,7 +124,7 @@ nav a:hover {
 	width: 25px;
 	height: 25px;
 	margin: 115px 5px 7px 2px;
-    background: url(imagenes/background1.svg) no-repeat;
+    background: url(../imagenes/background1.svg) no-repeat;
 }
 
 .formacion {
@@ -154,19 +156,19 @@ nav a:hover {
 }
 
 .contenidoPrincipal-formacion-link:first-child {
-	background: url(imagenes/image-uno.png) no-repeat;
+	background: url(../imagenes/image-uno.png) no-repeat;
 	background-color: #FFF;
 	background-position: center;
 }
 
 .contenidoPrincipal-formacion-link:nth-child(2) {
-	background: url(imagenes/image-dos.png) no-repeat;
+	background: url(../imagenes/image-dos.png) no-repeat;
 	background-color: #FFF;
 	background-position: center;
 }
 
 .contenidoPrincipal-formacion-link:nth-child(3) {
-	background: url(imagenes/image-tres.png) no-repeat;
+	background: url(../imagenes/image-tres.png) no-repeat;
 	background-color: #FFF;
 	background-position: center
 }
@@ -228,6 +230,10 @@ nav a:hover {
 	margin: 0px 16px;
 } */
 
+.imagen-proyecto {
+	width: 70%;
+}
+
 .titulo-proyecto {
 	font-size: 22px;
 	font-weight: bold;
@@ -263,6 +269,53 @@ nav a:hover {
 	background: #5595E9;
 }
 
-.imagen-proyecto {
-	margin-right: 16px;
+.formcontacto {
+	background-color: #EAF2FD;
 }
+
+.imagen-contacto {
+	display: block;
+	width: 464px;
+	height: 570px;
+}
+
+.contact-title {
+	font-weight: 700;
+	font-size: 22px;
+}
+
+.contact-subtext {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 25px;
+	margin: 0;
+}
+
+/* .contacto-input {
+	border: transparent;
+	height: 56px;
+	margin: 10px 0px;
+	width: 100%;
+}
+
+.contacto-input:focus {
+	outline: none;
+	border-bottom: solid 2px #2A7AE4;
+}
+
+.contacto-input::placeholder {
+	color: #2A7AE4;
+}
+
+.contacto-textarea {
+	border: transparent;
+	margin: 10px 0px;
+	height: 96px;
+	width: 100%;
+}
+
+.contacto-textarea::placeholder {
+	color: #2A7AE4;
+} */
+
+

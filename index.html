@@ -3,12 +3,13 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portafolio NSN</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="flexbox.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/flexbox.css">
+        <link rel="stylesheet" href="css/inputs.css">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@500&display=swap" rel="stylesheet">
-
     </head>
 
     <body>
@@ -22,7 +23,7 @@
                         <a class="headerPrincipal-nav-link" href="#id-skills-hobbies">Hobbies</a>
                         <a class="headerPrincipal-nav-link" href="#id-formacion">Formación</a>
                         <a class="headerPrincipal-nav-link" href="#id-experiencia-prog">Proyectos</a>
-                        <a class="headerPrincipal-nav-link headerPrincipal-nav-link-contacto" href="contacto.html">contacto@fulana.com</a>
+                        <a class="headerPrincipal-nav-link headerPrincipal-nav-link-contacto" href="#id-formcontacto">contacto@fulana.com</a>
                 </nav>
             </div>
         </header>
@@ -34,10 +35,11 @@
                     <p>Soy egresada de Lic. en Informática y actualmente estoy participando en el proyecto Oracle ONE en Alura Latam.</p>
                     <nav>
                         <ul class="presentacion-list">
-                            <li class="presentacion-items">Github</li>
-                            <li class="presentacion-items">Linkedln</li>
-                            <li class="presentacion-items">Instagram</li>
-                            <li class="presentacion-items">Curriculo</li>
+                            <li class="presentacion-items"><a href="https://github.com/ariesn">Github</a></li>
+                            <li class="presentacion-items"><a href="#">Linkedln</a></li>
+                            <li class="presentacion-items"><a href="#">Instagram</a></li>
+                            <li class="presentacion-items"><a href="#">Curriculo</a></li>
+                            
                         </ul>
                     </nav>
                 </div><img class="foto-perfil" src="imagenes/foto_perfil.png" alt="Foto de perfil">
@@ -132,11 +134,49 @@
                 </div>
             </section>
             <!-- formulario de contacto -->
+            <section id="id-formcontacto" class="formcontacto">
+                <div id="contacto" class="contacto">
+                    <div class="izquierda">
+                        <img class="imagen-contacto" src="imagenes/contact_image.png">
+                    </div>
+                    <div class="contact-text">
+                        <h2 class="contact-title">Contacto</h2>
+                        <h3 class="contact-subtext">Quieres contactarme</h3>
+                        <h3 class="contact-subtext">Completa el siguiente formulario y me pondre en contacto lo antes posible</h3>
+                        <form class="form" name="form">
+                            <div class="input-container">
+                                <input class="input" type="text" name="nombre" placeholder="Nombre" required data-tipo="nombre">
+                            <span class="input-message-error">Este campo no es valido</span>
+                            </div>
+                            <div class="input-container">
+                                <input class="input" type="email" name="email" placeholder="E-mail" required data-tipo="email">
+                                <span class="input-message-error">Este campo no es valido</span>
+                            </div>
+                            <div class="input-container">
+                                <input class="input" type="text" name="asunto" placeholder="Asunto" required data-tipo="asunto">
+                                <span class="input-message-error">Este campo no es valido</span>
+                            </div>
+                            <div class="textarea-container">
+                                <textarea class="textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje" required
+                                    data-tipo="mensaje"></textarea>
+                                <span class="textarea-mensagem-erro">Este campo no es valido</span>
+                            </div>
+                            <button type="submit" class="contacto_boton">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+           
         </main>
                 
         <footer>
+            <section class="rodapie">
+                <div class="container">
+                    <p>Desarrollado por Nadia Sámano 2022</p>
+                </div>
+            </section>
         </footer>
-        
+        <script src="./js/app.js" type="module"></script>
     </body>
 
 </html>
