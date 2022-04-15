@@ -98,7 +98,6 @@
 
 .contacto {
     display: flex;
-    /* justify-content: center; */
     padding: 64px 0px;
     width: 80%;
     margin: 32px auto 0px auto;
@@ -233,21 +232,18 @@
     }
 
     .contenidoPrincipal-formacion-link:first-child {
-        /* background: url(/imagenes/logo_itz.png) no-repeat; */
         background-color: #FFF;
 	    background-position: center;
         background-size: 40%;
     }
 
     .contenidoPrincipal-formacion-link:nth-child(2) {
-        /* background: url(/imagenes/one-alura.png) no-repeat; */
         background-color: #FFF;
         background-position: center;
         background-size: 70%;
     }
     
     .contenidoPrincipal-formacion-link:nth-child(3) {
-        /* background: url(/imagenes/cursogoogle.jpg) no-repeat; */
         background-color: #FFF;
         background-position: center;
         background-size: 70%;
@@ -403,18 +399,6 @@
         width: 296px;
         margin: 0px 2px 60px 0px;
     }
-       
-    /* .contenidoPrincipal-formacion-link:nth-child(4) {
-        margin-top: initial;
-    }
-
-    .contenidoPrincipal-formacion-link:nth-child(5) {
-        margin-top: initial;
-    }
-
-    .contenidoPrincipal-formacion-link:nth-child(6) {
-        margin-top: initial;
-    } */
     
     .experiencia-prog .container {
         width: initial;
