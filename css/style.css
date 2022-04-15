@@ -22,6 +22,7 @@ body {
     margin-right: 1em;
     width: 24px;
     height: 24px;
+	box-shadow: 5px 5px 10px 2px rgb(212, 209, 193);
  }
 
 .headerPrincipal-nav-link {
@@ -124,7 +125,11 @@ nav a:hover {
 	width: 25px;
 	height: 25px;
 	margin: 115px 5px 7px 2px;
-    background: url(../imagenes/background1.svg) no-repeat;
+    /* background: url(../imagenes/background1.svg) no-repeat; */
+}
+
+.icon-skill {
+	padding-top: 105px;
 }
 
 .formacion {
@@ -156,19 +161,19 @@ nav a:hover {
 }
 
 .contenidoPrincipal-formacion-link:first-child {
-	background: url(../imagenes/image-uno.png) no-repeat;
+	background: url(../imagenes/logo_itz.png) no-repeat;
 	background-color: #FFF;
 	background-position: center;
 }
 
 .contenidoPrincipal-formacion-link:nth-child(2) {
-	background: url(../imagenes/image-dos.png) no-repeat;
+	background: url(../imagenes/one-alura.png) no-repeat;
 	background-color: #FFF;
 	background-position: center;
 }
 
 .contenidoPrincipal-formacion-link:nth-child(3) {
-	background: url(../imagenes/image-tres.png) no-repeat;
+	background: url(../imagenes/cursogoogle.jpg) no-repeat;
 	background-color: #FFF;
 	background-position: center
 }
